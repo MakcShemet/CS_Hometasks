@@ -1,16 +1,20 @@
 ﻿Console.WriteLine("Введите три числа:");
 int max;
-int a = Convert.ToInt32(Console.ReadLine());
-int b = Convert.ToInt32(Console.ReadLine());
-int c = Convert.ToInt32(Console.ReadLine());
+int i = 0;
+int[] arr = new int[3];
+while( i < arr.Length) {
+    arr[i] = Convert.ToInt32(Console.ReadLine());
+    i++;
+} 
 
-if (a > b && a > c) {
-    max = a;
+if ((arr[0] > arr[1]) && (arr[0] > arr[2])) {
+    max = arr[0];
 }
-else if (b > c && b > a) {
-    max = b;
+else if ((arr[1] > arr[0]) && (arr[1] > arr[2])) {
+    max = arr[1];
 }
 else {
-    max = c;
+    max = arr[2];
+
 }
 Console.WriteLine("Максимальное число " + max);
