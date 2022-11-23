@@ -4,6 +4,9 @@ int b = Convert.ToInt32(Console.ReadLine());
 if (a > b) {
     Console.WriteLine("Число " + a + " больше числа " + b);
 }
-else {
+else if (b > a) {
     Console.WriteLine("Число " + a + " меньше числа " + b);
+}
+else {
+    Console.WriteLine($"Числа {a} и {b} равны");
 }
