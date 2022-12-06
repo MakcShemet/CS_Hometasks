@@ -2,7 +2,7 @@
 Найдите разницу между максимальным и минимальным элементов массива.
 [3 7 22 2 78] -> 76  */
 
-void CreateArray() {
+void MargElArray() {
     int size = Convert.ToInt32(Console.ReadLine());
     Random rand = new Random();
     double[] array = new double[size];
@@ -24,4 +24,4 @@ void CreateArray() {
     Console.Write($"[{str}] Разница максимального и минимального чисел массива = {result}");
 }
 Console.WriteLine("Введите размер массива");    
-CreateArray();
+MargElArray();
