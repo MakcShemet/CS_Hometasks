@@ -4,7 +4,7 @@
 */
 
 void evCount() {
-    int n = int.Parse(Console.ReadLine());
+    int n = Convert.ToInt32(Console.ReadLine());
     int[] arr = new int[n];
     string num = "четных чисел";
     int count = 0;
