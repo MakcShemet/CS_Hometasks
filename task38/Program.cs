@@ -4,11 +4,11 @@
 
 void MargElArray() {
     int size = Convert.ToInt32(Console.ReadLine());
-    Random rand = new Random();
+    //Random rand = new Random();
     double[] array = new double[size];
     double max = 0;        
     for (int i = 0; i < size; i++) {
-        array[i] = rand.Next(1, 100);
+        array[i] = new Random().Next(1, 100);
         if (array[i] > max) {
             max = array[i];
             }      
