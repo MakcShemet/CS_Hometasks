@@ -4,11 +4,11 @@
 
 int[] InputNum () {
     Console.WriteLine("Введите число для ограничения ввода:");
-    int M = Int32.Parse(Console.ReadLine());
+    int M = Convert.ToInt32(Console.ReadLine());
     Console.WriteLine("Введите любые отрицательные и положительные числа:");
     int[] arr = new int[M];
     for(int i = 0; i < arr.Length; i++) {
-        arr[i] = Int32.Parse(Console.ReadLine());
+        arr[i] = Convert.ToInt32(Console.ReadLine());
     }    
     return arr;
 }
